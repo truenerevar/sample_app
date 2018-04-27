@@ -4,7 +4,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+gem 'pg'
 gem 'rails', '~> 5.1.6'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -19,11 +19,14 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'spork-rails', github: 'A-gen/spork-rails'
 end
 
 group :development do
@@ -34,7 +37,6 @@ group :development do
 end
 
 group :test do
-  gem 'sqlite3'
   gem 'shoulda'
   gem 'shoulda-matchers'
 end
