@@ -1,0 +1,21 @@
+
+An error occurred while loading ./signup with invalid information.
+Failure/Error: load_dependency(file) { result = super }
+
+LoadError:
+  cannot load such file -- /home/vitalii/geekhubROR/rails_projects/sample_app/signup with invalid information
+# /home/vitalii/.rvm/gems/ruby-2.2.7/gems/activesupport-5.1.6/lib/active_support/dependencies.rb:286:in `load'
+# /home/vitalii/.rvm/gems/ruby-2.2.7/gems/activesupport-5.1.6/lib/active_support/dependencies.rb:286:in `block in load'
+# /home/vitalii/.rvm/gems/ruby-2.2.7/gems/activesupport-5.1.6/lib/active_support/dependencies.rb:258:in `load_dependency'
+# /home/vitalii/.rvm/gems/ruby-2.2.7/gems/activesupport-5.1.6/lib/active_support/dependencies.rb:286:in `load'
+
+Randomized with seed 9084
+
+
+1 deprecation warning total
+
+Finished in 0.00031 seconds (files took 11.66 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
+Randomized with seed 9084
+
