@@ -42,6 +42,8 @@ group :test do
   gem 'shoulda'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails'
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
