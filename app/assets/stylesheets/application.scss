@@ -170,3 +170,9 @@ input {
   @extend .control-group !optional;
   @extend .error !optional;
 }
+
+li {
+  .gravatar {
+  float: none;
+  }
+}
