@@ -171,7 +171,8 @@ input {
   @extend .error !optional;
 }
 
-li {
+.gravatrar-li {
+  display: block!important;
   .gravatar {
   float: none;
   }
